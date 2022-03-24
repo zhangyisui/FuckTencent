@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.v2ex.com/t/842172 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style><style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none}.tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{width:23px;height:23px;fill:#333;bottom:-15px;margin:0 6px}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 7px}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 100%;transform-origin:0 100%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(5.5) translate(-50%,25%);transform:scale(5.5) translate(-50%,25%);opacity:1}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,25%);transform:scale(1) translate(-50%,25%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{width:23px;height:23px;fill:#333;top:-15px;margin:0 6px}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 7px}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -100%;transform-origin:0 -100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(5.5) translate(-50%,-125%);transform:scale(5.5) translate(-50%,-125%);opacity:1}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,-125%);transform:scale(1) translate(-50%,-125%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:30% 0 0 30%}.tippy-popper[x-placement^=left] .tippy-roundarrow{width:23px;height:23px;fill:#333;right:-15px;margin:4px 0}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:4px 0}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:100% 0;transform-origin:100% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(5.5) translate(33%,-50%);transform:scale(5.5) translate(33%,-50%);opacity:1}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(33%,-50%);transform:scale(1.5) translate(33%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 30% 30% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{width:23px;height:23px;fill:#333;left:-15px;margin:4px 0}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:4px 0}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-100% 0;transform-origin:-100% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(5.5) translate(-133%,-50%);transform:scale(5.5) translate(-133%,-50%);opacity:1}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(-133%,-50%);transform:scale(1.5) translate(-133%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-animatefill] .tippy-content{transition:-webkit-clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98),-webkit-clip-path cubic-bezier(.46,.1,.52,.98)}.tippy-tooltip[data-interactive]{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{pointer-events:none}.tippy-roundarrow path{pointer-events:auto}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:26%;left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(100% 100% at 50% 50%);clip-path:ellipse(100% 100% at 50% 50%)}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(5% 50% at 50% 50%);clip-path:ellipse(5% 50% at 50% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 0 50%);clip-path:ellipse(135% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(25% 100% at 0 50%);clip-path:ellipse(25% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(25% 100% at 100% 50%);clip-path:ellipse(25% 100% at 100% 50%)}@media (max-width:360px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}</style>
+<meta name="Content-Type" content="text/html;charset=utf-8">
+<meta name="Referrer" content="unsafe-url">
+<meta content="True" name="HandheldFriendly">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="detectify-verification" content="d0264f228155c7a1f72c3d91c17ce8fb">
+<meta name="p:domain_verify" content="b87e3b55b409494aab88c1610b05a5f0">
+<meta name="alexaVerifyID" content="OFc8dmwZo7ttU4UCnDh1rKDtLlY">
+<meta name="baidu-site-verification" content="D00WizvYyr">
+<meta name="msvalidate.01" content="D9B08FEA08E3DA402BF07ABAB61D77DE">
+<meta property="wb:webmaster" content="f2f4cb229bda06a4">
+<meta name="google-site-verification" content="LM_cJR94XJIqcYJeOCscGVMWdaRUvmyz6cVOqkFplaU">
+<meta name="wwads-cn-verify" content="c8ffe9a587b126f152ed3d89a146b445">
+<script async="" src="./不敢用腾讯云了 - V2EX_files/analytics.js.下载"></script><script src="./不敢用腾讯云了 - V2EX_files/f.txt"></script><script src="./不敢用腾讯云了 - V2EX_files/f(1).txt" id="google_shimpl"></script><script type="text/javascript" src="./不敢用腾讯云了 - V2EX_files/makemoney.js.下载" async=""></script>
+
+<title>不敢用腾讯云了 - V2EX</title>
+<link rel="dns-prefetch" href="https://static.v2ex.com/">
+<link rel="dns-prefetch" href="https://cdn.v2ex.com/">
+<link rel="dns-prefetch" href="https://i.v2ex.co/">
+<link rel="dns-prefetch" href="https://www.google-analytics.com/">
+<style>
+        body {
+            min-width: 820px;
+            font-family: "Helvetica Neue", "Luxi Sans", "Segoe UI", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Logo";
+        }
+    </style>
+<link rel="stylesheet" type="text/css" media="screen" href="./不敢用腾讯云了 - V2EX_files/be0081056e3636abed7041261ac6aab21852c50f-combo.css">
+<script>
+        const SITE_NIGHT = 0;
+    </script>
+<link rel="stylesheet" href="./不敢用腾讯云了 - V2EX_files/tomorrow.css" type="text/css">
+<link rel="icon" sizes="192x192" href="https://www.v2ex.com/static/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.v2ex.com/static/apple-touch-icon-180.png?v=91e795b8b5d9e2cbf2d886c3d4b7d63c">
+<link rel="shortcut icon" href="https://www.v2ex.com/static/favicon.ico" type="image/png">
+<link rel="manifest" href="https://www.v2ex.com/manifest.webmanifest">
+<script>
+        const LANG = 'zhcn';
+        const FEATURES = ['search', 'favorite-nodes-sort'];
+    </script>
+<script src="./不敢用腾讯云了 - V2EX_files/ad64c164f9c6f240aa3940ff6ace27be7981f830-combo.js.下载" defer=""></script>
+<meta name="description" content="云计算 - @chuangbo - 今天收到腾讯云通知，说消息队列服务下周关闭，建议迁移，我直接懵了。公司有好多已经无人维护的历史服务，都集成了消息队列，怎么办？新接口和老接口不一样，怎么改？一边安排迁移工作，我一边想，是不是很久以前通">
+<link rel="canonical" href="https://www.v2ex.com/t/842172">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="不敢用腾讯云了 - V2EX">
+<meta property="og:description" content="云计算 - @chuangbo - 今天收到腾讯云通知，说消息队列服务下周关闭，建议迁移，我直接懵了。公司有好多已经无人维护的历史服务，都集成了消息队列，怎么办？新接口和老接口不一样，怎么改？一边安排迁移工作，我一边想，是不是很久以前通">
+<meta property="og:url" content="https://www.v2ex.com/t/842172">
+<meta property="og:site_name" content="V2EX">
+<meta property="article:tag" content="cloud">
+<meta property="article:section" content="云计算">
+<meta property="article:published_time" content="2022-03-22T11:02:03Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="云计算 - @chuangbo - 今天收到腾讯云通知，说消息队列服务下周关闭，建议迁移，我直接懵了。公司有好多已经无人维护的历史服务，都集成了消息队列，怎么办？新接口和老接口不一样，怎么改？一边安排迁移工作，我一边想，是不是很久以前通">
+<meta name="twitter:title" content="不敢用腾讯云了 - V2EX">
+<meta name="twitter:image" content="https:https://cdn.v2ex.com/avatar/f5de/aeea/584_large.png?m=1334458290">
+<meta name="twitter:site" content="@V2EX">
+<meta name="twitter:creator" content="@V2EX">
+<link rel="top" title="回到顶部" href="https://www.v2ex.com/t/842172#">
+<link rel="amphtml" href="https://www.v2ex.com/amp/t/842172">
+<script>
+const topicId = 842172;
+var once = "79461";
+
+document.addEventListener("DOMContentLoaded", () => {
+    protectTraffic();
+
+    const observer = new IntersectionObserver(
+        ([e]) => e.target.toggleAttribute('stuck', e.intersectionRatio < 1),
+        {threshold: [1]}
+    );
+
+    observer.observe(document.getElementById('reply-box'));
+
+    
+    hljs.initHighlightingOnLoad();
+    
+
+    $('#Main').on('click', '.no, .ago', function () {
+        location.hash = $(this).parents('.cell').prop('id');
+    });
+
+    
+
+    // refresh once
+    document.addEventListener('visibilitychange', e => {
+        if (document.visibilityState === 'visible') {
+            fetchOnce().then(once => {
+                $('#once').val(once);
+            });
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+function format(tpl) {
+    var index = 1, items = arguments;
+    return (tpl || '').replace(/{(\w*)}/g, function(match, p1) {
+        return items[index++] || p1 || match;
+    });
+}
+function loadCSS(url, callback) {
+    return $('<link type="text/css" rel="stylesheet"/>')
+        .attr({ href: url })
+        .on('load', callback)
+        .appendTo(document.head);
+}
+function lazyGist(element) {
+    var $btn = $(element);
+    var $self = $(element).parent();
+    var $link = $self.find('a');
+    $btn.prop('disabled', 'disabled').text('Loading...');
+    $.getJSON(format('{}.json?callback=?', $link.prop('href').replace($link.prop('hash'), '')))
+        .done(function(data) {
+            loadCSS(data.stylesheet, function() {
+                $self.replaceWith(data.div);
+                $('.gist .gist-file .gist-meta a').filter(function() { return this.href === $link.prop('href'); }).parents('.gist-file').siblings().remove();
+            });
+        })
+        .fail(function() { $self.replaceWith($('<a>').attr('href', url).text(url)); });
+}
+</script>
+<meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.v2ex.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.v2ex.com"></script><input type="hidden" id="_w_pedant"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script><script charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/btype.js"></script><script type="text/javascript" charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/chrome.js"></script><style type="text/css">
+      @font-face {
+          font-family: "element-icons";
+          src: url('chrome-extension://moombeodfomdpjnpocobemoiaemednkg/fonts/element-icons.woff') format('woff'),
+          url('chrome-extension://moombeodfomdpjnpocobemoiaemednkg/fonts/element-icons.ttf ') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+      }
+  </style></head>
+<body>
+<div id="Top">
+<div class="content">
+<div class="site-nav">
+<a href="https://www.v2ex.com/" name="top" title="way to explore"><div id="Logo"></div></a>
+<div id="search-container">
+<input id="search" type="text" maxlength="128" autocomplete="off" tabindex="1">
+<div id="search-result" class="box"></div>
+</div>
+<div class="tools">
+<a href="https://www.v2ex.com/" class="top">首页</a>
+<a href="https://www.v2ex.com/signup" class="top">注册</a>
+<a href="https://www.v2ex.com/signin" class="top">登录</a>
+</div>
+</div>
+</div>
+</div>
+<div id="Wrapper">
+<div class="content">
+<div id="Leftbar"></div>
+<div id="Rightbar">
+<div class="sep20"></div>
+<div class="box">
+<div class="cell">
+<strong>V2EX = way to explore</strong>
+<div class="sep5"></div>
+<span class="fade">V2EX 是一个关于分享和探索的地方</span>
+</div>
+<div class="inner">
+<div class="sep5"></div>
+<div align="center"><a href="https://www.v2ex.com/signup" class="super normal button">现在注册</a>
+<div class="sep5"></div>
+<div class="sep10"></div>
+已注册用户请 &nbsp;<a href="https://www.v2ex.com/signin">登录</a></div>
+</div>
+</div>
+<div class="sep20"></div>
+<div class="box">
+<div class="inner">
+<div class="sidebar_units">
+<a href="https://www.authing.cn/cloud-native?utm_source=v2ex&amp;utm_campaign=banner&amp;utm_term=cloud" target="_blank" rel="nofollow"><img src="./不敢用腾讯云了 - V2EX_files/cP45hPqN.jpeg" border="0" width="100%" alt="Authing"></a>
+<div class="sep10"></div>
+<a href="https://datapacket.com/china-dedicated-server-chinese?utm_source=v2ex&amp;utm_medium=cpc&amp;utm_campaign=cloud&amp;utm_content=static1" target="_blank" rel="nofollow"><img src="./不敢用腾讯云了 - V2EX_files/datapacket_20190221.png" border="0" width="100%" alt="DataPacket"></a>
+<div class="sep10"></div>
+<a href="https://www.cdn77.com/cn?utm_source=v2ex&amp;utm_medium=cpc&amp;utm_campaign=cloud&amp;utm_content=static2" target="_blank" rel="nofollow"><img src="./不敢用腾讯云了 - V2EX_files/cdn77_20190117.png" border="0" width="100%" alt="CDN77"></a>
+<div class="sep10"></div>
+</div>
+<style type="text/css">
+#Wrapper {
+background-color: #d5e6ef;
+}
+</style>
+<strong class="green">Recommended Services</strong>
+<div class="sep5"></div>
+<span class="chevron">›</span> <a href="http://aws.amazon.com/" target="_blank">Amazon Web Services</a>
+<div class="sep5"></div>
+<span class="chevron">›</span> <a href="https://leancloud.cn/" target="_blank">LeanCloud</a>
+<div class="sep5"></div>
+<span class="chevron">›</span> <a href="http://newrelic.com/" target="_blank">New Relic</a>
+<div class="sep5"></div>
+<span class="chevron">›</span> <a href="http://www.cleardb.com/" target="_blank">ClearDB</a>
+</div>
+<div class="sidebar_compliance"><a href="https://www.v2ex.com/advertise" target="_blank">广告</a></div>
+</div>
+<div class="sep20"></div>
+<div class="box">
+<div class="inner" align="center">
+<a href="https://www.finclip.com/competition/?from=v2ex" target="_blank"><img src="./不敢用腾讯云了 - V2EX_files/finclip_20220322.png" border="0" width="250" height="250" alt="FinClip" style="vertical-align: bottom;"></a>
+</div>
+<div class="sidebar_compliance flex-one-row"><div><a href="https://www.finclip.com/competition/?from=v2ex" target="_blank">2022 FinClip 黑客马拉松，寻找「最强大脑」</a></div><a href="https://www.v2ex.com/advertise" target="_blank">广告</a></div>
+</div>
+<div class="sep20"></div>
+</div>
+<div id="Main">
+<div class="sep20"></div>
+<div class="box" style="border-bottom: 0px;">
+<div class="header"><div class="fr"><a href="https://www.v2ex.com/member/chuangbo"><img src="./不敢用腾讯云了 - V2EX_files/584_large.png" class="avatar" border="0" align="default" alt="chuangbo"></a></div>
+<a href="https://www.v2ex.com/">V2EX</a> <span class="chevron">&nbsp;›&nbsp;</span> <a href="https://www.v2ex.com/go/cloud">云计算</a>
+<div class="sep10"></div>
+<h1>不敢用腾讯云了</h1>
+<div id="topic_842172_votes" class="votes">
+<a href="javascript:" onclick="upVoteTopic(842172);" class="vote"><li class="fa fa-chevron-up"></li> &nbsp;12</a> &nbsp;<a href="javascript:" onclick="downVoteTopic(842172);" class="vote"><li class="fa fa-chevron-down"></li></a></div> &nbsp; <small class="gray"><a href="https://www.v2ex.com/member/chuangbo">chuangbo</a> · <span title="2022-03-22 19:02:03 +08:00">1 天前</span> · 10171 次点击</small>
+</div>
+<div class="cell">
+<div class="topic_content"><div class="markdown_body"><p>今天收到腾讯云通知，说消息队列服务下周关闭，建议迁移，我直接懵了。公司有好多已经无人维护的历史服务，都集成了消息队列，怎么办？新接口和老接口不一样，怎么改？一边安排迁移工作，我一边想，是不是很久以前通知过，我没看到。然后我去问客服，客服说，是 4 天前通知的。好家伙，10 个工作日。下线一个基础服务，腾讯云只给你 10 天时间。</p>
+<p><img alt="" class="embedded_image" loading="lazy" referrerpolicy="no-referrer" rel="noreferrer" src="./不敢用腾讯云了 - V2EX_files/WH45iaDu.png"></p>
+<p><img alt="" class="embedded_image" loading="lazy" referrerpolicy="no-referrer" rel="noreferrer" src="./不敢用腾讯云了 - V2EX_files/e68GBO4z.png"></p>
+</div></div>
+</div>
+<div class="cell">
+
+
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div class="sep20"></div>
+<div class="box">
+<div class="cell"><div class="fr" style="margin: -3px -5px 0px 0px;"><a href="https://www.v2ex.com/tag/%E9%98%9F%E5%88%97" class="tag"><li class="fa fa-tag"></li> 队列</a><a href="https://www.v2ex.com/tag/%E8%BF%81%E7%A7%BB" class="tag"><li class="fa fa-tag"></li> 迁移</a><a href="https://www.v2ex.com/tag/%E9%80%9A%E7%9F%A5" class="tag"><li class="fa fa-tag"></li> 通知</a><a href="https://www.v2ex.com/tag/%E8%85%BE%E8%AE%AF" class="tag"><li class="fa fa-tag"></li> 腾讯</a></div><span class="gray">94 条回复 &nbsp;<strong class="snow">•</strong> &nbsp;2022-03-24 08:23:09 +08:00</span>
+</div>
+<div id="r_11493737" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/02be1bdc8baca3756f7fd0924630c67b.jpeg" class="avatar" border="0" align="default" alt="icy37785"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">1</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/icy37785" class="dark">icy37785</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:04:37 +08:00">1 天前 via iPhone</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 3</span>
+<div class="sep5"></div>
+<div class="reply_content">还有发通知之前关闭的，这个真离谱到家了</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11493738" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/104668_normal.png" class="avatar" border="0" align="default" alt="gejun123456"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">2</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/gejun123456" class="dark">gejun123456</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:06:45 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">离谱</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11493741" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/342973_normal.png" class="avatar" border="0" align="default" alt="cxtrinityy"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">3</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/cxtrinityy" class="dark">cxtrinityy</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:07:45 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">借口不一样为什么要说完全兼容旧版的 SDK?</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11493744" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/205208_normal.png" class="avatar" border="0" align="default" alt="elfive"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">4</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/elfive" class="dark">elfive</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:08:08 +08:00">1 天前 via iPhone</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 5</span>
+<div class="sep5"></div>
+<div class="reply_content">外部依赖越多，其实越脆弱。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11493747" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/544832_normal.png" class="avatar" border="0" align="default" alt="yin1999"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">5</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/yin1999" class="dark">yin1999</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:08:53 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">不做人啊</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div style="border-bottom: 1px solid var(--box-border-color);">
+
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="r_11493749" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/584_normal.png" class="avatar" border="0" align="default" alt="chuangbo"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">6</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/chuangbo" class="dark">chuangbo</a></strong> &nbsp; <div class="badges"><div class="badge op">OP</div></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:09:54 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/cxtrinityy">cxtrinityy</a> 老接口也有新老两个版本，一个是 2017 ，也就是我们当时用的，后来有升级了新接口，因为没有说老接口会下线，我们自然就没有升级。今天看他新版根本没有这个 2017 的接口文档了，所以对于我们来说并不兼容。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11493751" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/584_normal.png" class="avatar" border="0" align="default" alt="chuangbo"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">7</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/chuangbo" class="dark">chuangbo</a></strong> &nbsp; <div class="badges"><div class="badge op">OP</div></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:11:05 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/elfive">elfive</a> 是啊但是现在用 AWS 大家都会用 AWS 提供的服务的，很少会自己维护了。这已经成为了一个习惯，减少了很多运维成本。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11493782" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/205208_normal.png" class="avatar" border="0" align="default" alt="elfive"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">8</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/elfive" class="dark">elfive</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:25:54 +08:00">1 天前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/chuangbo">chuangbo</a> 自己花一次时间写，省下后面 N 次被迫升级的维护时间。用别人的，前期能省不少，但是这玩意不太适合长期项目。看取舍了。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11493806" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/365483_normal.png" class="avatar" border="0" align="default" alt="Huelse"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">9</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Huelse" class="dark">Huelse</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 19:35:54 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 3</span>
+<div class="sep5"></div>
+<div class="reply_content">真的坑，让我想到之前遇到 postgresql 广州区严重网络故障废了一天，结果完事了就送了张优惠券</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11493866" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/211732_normal.png" class="avatar" border="0" align="default" alt="MengiNo"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">10</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/MengiNo" class="dark">MengiNo</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 20:02:32 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 39</span>
+<div class="sep5"></div>
+<div class="reply_content">腾讯云最大的失误就是让你们查到他们是 3 月 18 号 发的这个公告 23333 。 你看 12306 的所有公告就全部没有落款和时间。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494010" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/49898a022667beb29951a580b31eeb9c" class="avatar" border="0" align="default" alt="xinghen57"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">11</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/xinghen57" class="dark">xinghen57</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 21:09:53 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/elfive">elfive</a> #8 我觉得折中一点可以前期用别人的先把业务跑起来，后期逐渐迁移到自己开发的系统。不过现实中很多人业务跑起来就没事了。有点像因果报应。<br>现在逆全球化的趋势越发明显，一些免费或共享技术感觉会有重新收费和封闭的趋势。<br>还是掌握在自己手里的最安心，数据和算法。其他的顶多是费点时间。<br>我觉得 op 抱怨的点应该是在工作量又大了，需要加班，以及工作难度有点超出自己能力范围。如果向公司汇报后增加人手，可以正常上下班，工作强度不变，这帖子估计就没了。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494025" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/eadf96d2af0a7021d0ffc02607053973" class="avatar" border="0" align="default" alt="binfengxy"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">12</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/binfengxy" class="dark">binfengxy</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 21:17:42 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">估计企鹅自己都不用这个消息队列，你指望这种没有效益的服务他会好好对待么？<br>严重怀疑这些云服务在云厂商自己的平台里面的应用范围有多广？</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494034" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/6cfd2a37f6a87929944a1bfefc6c97f5.jpeg" class="avatar" border="0" align="default" alt="lscho"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">13</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/lscho" class="dark">lscho</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 21:22:28 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/xinghen57">xinghen57</a> op 抱怨的是工作量大吗？明明是腾讯发通知时间太短啊。。。连我这个多年腾讯云用户都觉得这操作没法洗。<br><br>正常对外售卖的商用服务下线，不说半年，至少也得提前 3 个月通知。<br><br>只给 10 天时间（甚至有些地区先关停再通知），业务稍微复杂点，公司给你加多少人也没法解决。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494044" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/453284_normal.png" class="avatar" border="0" align="default" alt="com67373"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">14</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/com67373" class="dark">com67373</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 21:25:12 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 2</span>
+<div class="sep5"></div>
+<div class="reply_content">腾讯的东西能不用就别用</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494051" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/e717cafe78b5e79b7e485bb1c674a79d" class="avatar" border="0" align="default" alt="SUMIMASEI"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">15</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/SUMIMASEI" class="dark">SUMIMASEI</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 21:26:36 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">你这里不是问的官方客服吧，今天恰巧也咨询了腾讯云客服，存量的队列会持续维护一段时间，不会这么快下线，建议你也联系官方客服申请下延期。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494083" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/584_normal.png" class="avatar" border="0" align="default" alt="chuangbo"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">16</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/chuangbo" class="dark">chuangbo</a></strong> &nbsp; <div class="badges"><div class="badge op">OP</div></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 21:43:21 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/SUMIMASEI">SUMIMASEI</a> 是官方客服。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494102" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/64567_normal.png" class="avatar" border="0" align="default" alt="GuangXiN"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">17</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/GuangXiN" class="dark">GuangXiN</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 21:52:58 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 22</span>
+<div class="sep5"></div>
+<div class="reply_content">经历过阿里云容器集群下线事件。提前 7 个月发出公告，提前 3 个月输出详细的迁移指南，最后一个月还群发消息欢迎提工单一对一技术支持，最后 deadline 终于到了，发了个新公告说全面下线改为 WebUI 停止新建，现有的旧集群延长 3 个月的支持服务。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494129" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/527231_normal.png" class="avatar" border="0" align="default" alt="Rocketer"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">18</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Rocketer" class="dark">Rocketer</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 22:04:25 +08:00">1 天前 via iPhone</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 3</span>
+<div class="sep5"></div>
+<div class="reply_content">说自己建的，可能不了解自己维护的成本有多高。<br><br>别急着反驳，等你的规模大到不能让程序员“捎带手”维护一下的地步再说。<br><br>一般这种服务我们都是自己套一层再用，倒不是为了防它下线，而是为了换云的时候方便。这样只需要写个新的实现类就可以换用其他云了，自己建当然也没问题。<br><br>PS：有些公司出于安全的角度，会刻意把服务跑在不同的云上，就更需要这么做了。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494134" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/6a4857ac7b0764015c1c462986f1818e" class="avatar" border="0" align="default" alt="Cielsky"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">19</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Cielsky" class="dark">Cielsky</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 22:05:54 +08:00">1 天前 via Android</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 8</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/MengiNo">MengiNo</a> 额，12306 我看了官网的公告，大部分都在标题里写了时间啊，少部分没有的，每个公告标题后面也有发布时间啊</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494137" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/49898a022667beb29951a580b31eeb9c" class="avatar" border="0" align="default" alt="xinghen57"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">20</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/xinghen57" class="dark">xinghen57</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 22:06:28 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 2</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/lscho">lscho</a> #13 正常确实是这样。不过首先很好奇 op 为何没提交工单？正常业务上的问题，只看对方公告就直接执行？即便是边缘的小用户，还是有协商空间的。或者提工单沟通，或者电话沟通。我一个人用户，之前提交工单后竟然 2 小时内接到腾讯电话沟通，当时是很意外。<br>很期待 op 贴工单答复打脸。<br><br>另外，op 贴出的公告是完全兼容旧版 SDK ，没提旧版下线的事情，同时还提供了迁移工具。时间上以公告来看确实仓促，但不能说 腾讯完全不没做补救。毕竟也是给出了常规的解决方案。谁没突发情况？看看最近几个头条以及这几年，哪个是提前计划好的？哪个是提前给你发个“杀人预告”？所以我认为以公告看，我认为腾讯做了努力，表示理解，没毛病。你骂腾讯，骂他时间太短，不安常理出牌，也没毛病。<br><br>继续，op 自己又说旧版分 17 年前和 17 年后，新版没 17 的接口文档。<br>我的理解，op 首先连到底旧版是否无法使用都没搞清楚。没文档等于无法使用？<br><br>最后，op 没提到公对公的沟通结果，或者根本就没进行沟通就直接跑过来发帖发泄。<br>作为一社畜，看到这种公告，我第一反应是核实公告内容的具体含义。比如 op 的情况，我会先提工单描述我的业务及涉及的接口，询问是否无法使用。<br>如果答复兼容，我会向公司报告，同时建议迁移到新 sdk 。之后可能会有提交迁移方案，申请资源等一系列工作。<br>如果确认无法使用后，一方面向公司报告，另一方面继续提工单沟通是否可以延期或其他解决方案。<br>如果之后的沟通，腾讯的态度趾高气昂，答复是公式化的没有、不给延期或协商，再来论坛发帖也无可厚非。<br>明明很急，明明公对公，明明对方有不妥也有补救，op 也不发自己的沟通过程，只是来论坛发帖抱怨，感觉和女大学生被出租车司机绑架后到论坛发帖求助一样违合。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div style="border-bottom: 1px solid var(--box-border-color);">
+
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="r_11494141" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/40195_normal.png" class="avatar" border="0" align="default" alt="BeijingBaby"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">21</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/BeijingBaby" class="dark">BeijingBaby</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 22:06:49 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">用外部服务，都最好写个适配器，方便切换为其他家的。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494147" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/df27513dd2f5acd408396a5df63b61a6.png" class="avatar" border="0" align="default" alt="Danswerme"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">22</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Danswerme" class="dark">Danswerme</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 22:08:59 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">。。。。。。。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494215" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/550114_normal.png" class="avatar" border="0" align="default" alt="pengtdyd"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">23</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/pengtdyd" class="dark">pengtdyd</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 22:38:12 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">国内的云服务，除了收钱快，其他的不敢恭维，比如著名的微盟删库事件</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494258" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/442190_normal.png" class="avatar" border="0" align="default" alt="eason1874"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">24</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/eason1874" class="dark">eason1874</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 23:04:29 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">商用产品，不太可能这么赶，提交工单问问</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494288" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/9d2e9597abb96f04bb20fbaadd9e3702.jpeg" class="avatar" border="0" align="default" alt="wavelpc"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">25</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/wavelpc" class="dark">wavelpc</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 23:24:17 +08:00">1 天前 via Android</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 4</span>
+<div class="sep5"></div>
+<div class="reply_content">服了，完全不像是商用服务呀喂</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494362" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/102941_normal.png" class="avatar" border="0" align="default" alt="Osk"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">26</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Osk" class="dark">Osk</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-22 23:58:10 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">离大谱了, 属实活久见...</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494375" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/7117c35b821b40f2346854959e72af1f" class="avatar" border="0" align="default" alt="dem0ns"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">27</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/dem0ns" class="dark">dem0ns</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 00:02:18 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 11</span>
+<div class="sep5"></div>
+<div class="reply_content">12306 公告在列表中是有时间的<br><br><a target="_blank" href="https://www.12306.cn/mormhweb/zxdt/index_zxdt.html" rel="nofollow noopener">https://www.12306.cn/mormhweb/zxdt/index_zxdt.html</a></div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494389" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/108592_normal.png" class="avatar" border="0" align="default" alt="Citrus"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">28</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Citrus" class="dark">Citrus</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 00:11:37 +08:00">1 天前 via iPhone</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 6</span>
+<div class="sep5"></div>
+<div class="reply_content">不做过多评价，仅陈述事实：<br><br>1. CMQ 目前免费<br>2. CMQ 官方没有看到正式商用收费的通知<br>3. 2021-09-23 时官方已给出迁移说明，2020-05 已暂停内测开始升级</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494398" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/8c84a3dc8b0276f817d830a9a9315c9f" class="avatar" border="0" align="default" alt="goodSleep"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">29</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/goodSleep" class="dark">goodSleep</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 00:15:55 +08:00">1 天前 via Android</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">之前遇到过腾讯云 es 服务他们运维失误自己把 ES 端口封了</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494489" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/584_normal.png" class="avatar" border="0" align="default" alt="chuangbo"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">30</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/chuangbo" class="dark">chuangbo</a></strong> &nbsp; <div class="badges"><div class="badge op">OP</div></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 02:05:43 +08:00">1 天前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/Citrus">Citrus</a> 迁移说明里说了旧服务即将关闭吗？第一次通知服务关闭是什么时候呢？<br><br>如果迁移通知没有提到旧服务关闭计划，是不是等同于「如何从 MySQL 迁移到 MariaDB 」，并不是说下周 MySQL 就不能用了吧？</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494498" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/584_normal.png" class="avatar" border="0" align="default" alt="chuangbo"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">31</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/chuangbo" class="dark">chuangbo</a></strong> &nbsp; <div class="badges"><div class="badge op">OP</div></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 02:21:35 +08:00">1 天前 via iPhone</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 4</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/xinghen57">xinghen57</a> 我原帖提到了在安排迁移工作的同事，也去联系了客服。我们有腾讯云的 VIP 专属客服群，客服回复也很及时。<br><br>但是你要知道，客服的态度和云服务的政策是两码事。我们感到不愉快的是，腾讯云是否认为只要提前一分钟通知，就可以随意关闭一个服务，并且免责吗？<br><br>我们认为，下线一个产品是可以理解的，没有一个产品可以永远在线。但是云服务商应该有一个正常关闭服务的流程，比如分几个阶段，提前多久时间。<br><br>你想象一下，如果你是一个金融公司，用了腾讯云的上海金融机房，正常一个迭代是一个月。有一天你突然收到这个 10 天后下线的通知，是应该保持冷静，理解并感谢腾讯云友好礼貌的客服，然后紧急迁移吗？</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494628" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/94227_normal.png" class="avatar" border="0" align="default" alt="yuzo555"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">32</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/yuzo555" class="dark">yuzo555</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 08:28:04 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">关于公告时间问题，注意“最近更新时间”，这公告应该是比较早发的，只是后面有修改。<br><br>售后说 3 月 18 发的，他大概率只是自己看了网页上的时间就回复给你，没有真正去核实。<br><br>腾讯云售后一个最大的问题就是他们的客服绝大部分都是外包，不是腾讯的员工，外包就算了业务能力也差，没有到位的培训。<br><br>我遇到过问腾讯云的问题，腾讯云群里的售后发来一个阿里云的链接，经过我的提醒他才撤回。很明显他也是现场搜的。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494672" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/544832_normal.png" class="avatar" border="0" align="default" alt="yin1999"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">33</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/yin1999" class="dark">yin1999</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 08:54:20 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/yuzo555">yuzo555</a> #32 ，GitHub 上显示的创建日期确实是 3 月 18 日： <a target="_blank" href="https://github.com/tencentyun/qcloud-documents/commits/master/product/%E8%AE%A1%E7%AE%97%E4%B8%8E%E7%BD%91%E7%BB%9C" rel="nofollow noopener">https://github.com/tencentyun/qcloud-documents/commits/master/product/计算与网络</a> /消息队列 /关于消息队列%20CMQ%20 <a target="_blank" href="http://xn--ghq35f62ces2e.md/" rel="nofollow noopener">下线公告.md</a></div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494675" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/544832_normal.png" class="avatar" border="0" align="default" alt="yin1999"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">34</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/yin1999" class="dark">yin1999</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 08:55:14 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/yin1999">yin1999</a> 链接有点问题： <a target="_blank" href="https://github.com/tencentyun/qcloud-documents/commits/master/product/%E8%AE%A1%E7%AE%97%E4%B8%8E%E7%BD%91%E7%BB%9C/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/%E5%85%B3%E4%BA%8E%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%20CMQ%20%E4%B8%8B%E7%BA%BF%E5%85%AC%E5%91%8A.md" rel="nofollow noopener">https://github.com/tencentyun/qcloud-documents/commits/master/product/%E8%AE%A1%E7%AE%97%E4%B8%8E%E7%BD%91%E7%BB%9C/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/%E5%85%B3%E4%BA%8E%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%20CMQ%20%E4%B8%8B%E7%BA%BF%E5%85%AC%E5%91%8A.md</a></div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494734" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/408308_normal.png" class="avatar" border="0" align="default" alt="RickyC"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">35</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/RickyC" class="dark">RickyC</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 09:09:52 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">10 个工作日还不够?</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494745" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/408308_normal.png" class="avatar" border="0" align="default" alt="RickyC"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">36</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/RickyC" class="dark">RickyC</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 09:11:57 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">我使用产品和服务的原则是, 只要你对我讲礼貌.<br>出去吃饭, 只要服务员对我讲礼貌, 给我吃米饭就咸菜都行.<br>腾讯云是目前国内发现, 最讲礼貌的云服务.</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494793" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/163293_normal.png" class="avatar" border="0" align="default" alt="liuzhaowei55"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">37</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/liuzhaowei55" class="dark">liuzhaowei55</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 09:19:37 +08:00">1 天前 via iPhone</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">商用服务就不应该用腾讯云，他自己的服务都不在这个架构上，怎么放心用。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494817" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/019b5c2f3d08bebdcc7cf28b2f8a9561" class="avatar" border="0" align="default" alt="yikyo"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">38</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/yikyo" class="dark">yikyo</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 09:24:16 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/RickyC">RickyC</a> 正常公司上线一个迭代有多麻烦，评审，开发，测试，上线，整套流程跑个 10 天半个月太正常了，楼主也明确说了公司内部有很多系统用到了这个服务。10 个工作日的迁移时间，根本就没把用户当回事。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494830" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/226307_normal.png" class="avatar" border="0" align="default" alt="dzdh"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">39</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/dzdh" class="dark">dzdh</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 09:26:27 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">中间封装一层的事。觉得 10 天够用。<br><br>技术上总不会直接 业务代码里直接 new TencentCMQ()-&gt;pull 吧？那时间是不够。<br><br>php 像 laravel 队列的 provider 和业务逻辑是隔离的。修改新增一个 driver 搞定。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11494973" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/a0e1e9d3c2cb15de64f0a7ed3f30e66e" class="avatar" border="0" align="default" alt="233x3"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">40</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/233x3" class="dark">233x3</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 09:52:07 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">我在 3 月 9 号看到 cmq 控制台页面有弹窗提示了，但是到现在也没收到腾讯云的通知，站内信短信都没收到。和 OP 类似，有很多无人维护的历史服务，现在头大着呢，只能庆幸自己看到的早了</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495040" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/49898a022667beb29951a580b31eeb9c" class="avatar" border="0" align="default" alt="xinghen57"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">41</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/xinghen57" class="dark">xinghen57</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 10:05:02 +08:00">1 天前 via iPhone</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/chuangbo">chuangbo</a> 呃，现在公对公用客服群？？？我感觉自己落伍了。<br>有合同、协议么？不考虑走法务么？<br>到这发帖，舆论引战？新手段？</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495075" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/95719_normal.png" class="avatar" border="0" align="default" alt="nellace"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">42</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/nellace" class="dark">nellace</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 10:11:08 +08:00">1 天前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 13</span>
+<div class="sep5"></div>
+<div class="reply_content">在这发帖违反哪条党纪国法了，OP 是造谣了还是扭曲事实了，舆论本身就是解决问题的一种方式？<br>@<a href="https://www.v2ex.com/member/xinghen57">xinghen57</a></div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495500" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/f7f653a4f1fef3b4d4eab121530c7beb" class="avatar" border="0" align="default" alt="ydpro"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">43</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/ydpro" class="dark">ydpro</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 11:14:40 +08:00">1 天前</span>
+<div class="sep5"></div>
+<div class="reply_content">之前买的腾讯云服务器到期了没有续，一些业务在上面没释放，服务器到期后过了几天，腾讯云什么通知都没发就又送了两个月时间，导致那一段时间有些业务跑两遍，整个部门鸡飞狗跳。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495586" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/92455_normal.png" class="avatar" border="0" align="default" alt="Felldeadbird"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">44</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Felldeadbird" class="dark">Felldeadbird</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 11:29:51 +08:00">23 小时 49 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">看来不能过于集成单一的云服务。业务代码多少要留一手，这样发生下架变动时，改接口层切换自己服务器或者换一家提供商。</div>
+ </td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495606" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/94052abc22abdb0645865292077d5ec9" class="avatar" border="0" align="default" alt="bug123"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">45</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/bug123" class="dark">bug123</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 11:33:38 +08:00">23 小时 45 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/ydpro">ydpro</a> 赠送机器也能喷</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495632" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/f7f653a4f1fef3b4d4eab121530c7beb" class="avatar" border="0" align="default" alt="ydpro"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">46</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/ydpro" class="dark">ydpro</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 11:39:03 +08:00">23 小时 39 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/bug123">bug123</a> 我求着他送了？送最起码发条短信吧</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495662" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/459675_normal.png" class="avatar" border="0" align="default" alt="q1angch0u"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">47</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/q1angch0u" class="dark">q1angch0u</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 11:43:13 +08:00">23 小时 35 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 9</span>
+<div class="sep5"></div>
+<div class="reply_content"><a target="_blank" href="https://cloud.tencent.com/document/product/406/13648" rel="nofollow noopener">https://cloud.tencent.com/document/product/406/13648</a><br>“现阶段 CMQ 服务免费。您无需为队列服务和主题模式的请求次数、消息堆积支付费用。”<br>没商用的服务你自己公司在用，然后还说人家下线没提前给你们打招呼。。。何德何能</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495669" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/459675_normal.png" class="avatar" border="0" align="default" alt="q1angch0u"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">48</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/q1angch0u" class="dark">q1angch0u</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 11:44:08 +08:00">23 小时 34 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/q1angch0u">q1angch0u</a> 建议去找你公司写历史服务的那个人，而不是在这发帖博人眼球。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495722" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/94052abc22abdb0645865292077d5ec9" class="avatar" border="0" align="default" alt="bug123"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">49</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/bug123" class="dark">bug123</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 11:57:09 +08:00">23 小时 21 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 5</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/ydpro">ydpro</a> 你只是想让腾讯云给你背锅而已，自己的业务要去依赖服务器停机时间也是挺搞笑的</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495811" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/49e2bdf46d0978abd5b080a7a08b05a6.jpeg" class="avatar" border="0" align="default" alt="twing37"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">50</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/twing37" class="dark">twing37</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 12:22:17 +08:00">22 小时 56 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">所有东西开工单即可.尤其是这种. 看公告给了缓冲时间,6 月底前</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495878" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/584_normal.png" class="avatar" border="0" align="default" alt="chuangbo"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">51</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/chuangbo" class="dark">chuangbo</a></strong> &nbsp; <div class="badges"><div class="badge op">OP</div></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 12:46:32 +08:00">22 小时 32 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/RickyC">RickyC</a> 在我看来，只提前 10 天通知，是一个不礼貌的行为。<br><br>如果用你说的餐馆吃饭举例，大概相当于你张罗了十几个人，一桌子菜刚刚上齐，服务员非常礼貌并且客气的告诉你，虽然现在离饭店关门时间还早，但是餐馆决定 5 分钟之后就开始收拾你的桌子，请你尽快吃完。客服的和气礼貌，并不表示公司的策略是合理的。<br><br>@<a href="https://www.v2ex.com/member/xinghen57">xinghen57</a> 这里是一个科技社区，公开讨论云服务是符合社区主题的。作为腾讯云的客户，在和他们沟通解决问题的同时，我们也有在公开渠道发声的权利。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495882" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/179494_normal.png" class="avatar" border="0" align="default" alt="joesonw"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">52</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/joesonw" class="dark">joesonw</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 12:47:29 +08:00">22 小时 31 分钟前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">腾讯云和华为云很多都是自己用的顺手放云上，不用了就不管了。阿里云至少还是相对来说专注于做云一点。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495892" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/ae13933150e47e27e73735c66fcc5d72" class="avatar" border="0" align="default" alt="zzzmode"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">53</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/zzzmode" class="dark">zzzmode</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 12:52:54 +08:00">22 小时 26 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 2</span>
+<div class="sep5"></div>
+<div class="reply_content">云厂商的各种魔改服务最好别用</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495900" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/14114_normal.png" class="avatar" border="0" align="default" alt="wythe"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">54</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/wythe" class="dark">wythe</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 12:54:44 +08:00">22 小时 24 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 14</span>
+<div class="sep5"></div>
+<div class="reply_content">v2ex 现在弱智化这么严重么？看一半看笑了。<br>人均大公司人手一套云系统的，看完 V2EX 我都怀疑云厂商为啥还没倒闭？<br>还有一个商业公司提供的免费服务，就是不需要担责是么？好家伙，腾讯云自己都不敢这么写，舔到最后一无所有。<br>还有靠礼貌用服务的，倒是给我整不会了。<br>还有说 6 月的，肯定没少吃所有商品 1 元起的亏吧？ 3 月 15 就开始下线了，在这整上限有意思？<br>还有给我服务造成困扰，我吐槽都不行，说多一句就是不懂感恩的。<br><br>这都啥破回复啊？</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495927" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/49898a022667beb29951a580b31eeb9c" class="avatar" border="0" align="default" alt="xinghen57"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">55</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/xinghen57" class="dark">xinghen57</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 13:01:50 +08:00">22 小时 17 分钟前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/nellace">nellace</a> 我发帖前会尽量认真看帖子前面的内容，就事论事。<br>还请兄台指正，我之前的，哪句不是事实？我哪句说 op 违反党纪国法了？我有哪个字提到 op 扭曲事实造谣了？<br>你这一堆帽子扣下来，是何用意？<br><br>其他层友补充的诸如“免费”“去年给出迁移说明”“有 10 天内解决的方案”如果属实，我认为这是片面事实不为过吧？这种情况年终考核评语写个“工作能力有待提高”“沟通能力有待提高”“职业素养有待提高”之类的评语，也算有事实依据吧？<br><br>兄台也是经过高等教育的新时代栋梁，发言前还是把前因后果梳理下，也是对自己的一种负责。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11495936" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/34933_normal.png" class="avatar" border="0" align="default" alt="wd"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">56</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/wd" class="dark">wd</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 13:03:55 +08:00">22 小时 14 分钟前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">太离谱了</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496024" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/ad47cb26b1edb5232b0b9d2576f14bfd" class="avatar" border="0" align="default" alt="py2ex"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">57</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/py2ex" class="dark">py2ex</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 13:33:16 +08:00">21 小时 45 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 4</span>
+<div class="sep5"></div>
+<div class="reply_content">"到这发帖，舆论引战？新手段？"<br>哈哈，要是不看标题还以为是海军的云服务<br>下一句怕是“境外势力”了</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496053" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/41508_normal.png" class="avatar" border="0" align="default" alt="hotsymbol"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">58</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/hotsymbol" class="dark">hotsymbol</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 13:39:59 +08:00">21 小时 38 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">太可怕了。还是 AWS 用的顺手些</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496066" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/395967_normal.png" class="avatar" border="0" align="default" alt="HiCode"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">59</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/HiCode" class="dark">HiCode</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 13:43:06 +08:00">21 小时 35 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 8</span>
+<div class="sep5"></div>
+<div class="reply_content">去看了腾讯云官方的文档说明，我站腾讯云。<br><br>第一，这是免费服务；<br>第二，2021 年 9 月就通知产品升级，建议白嫖党升级了。<br><br>企业内部的技术项目管理问题，需要你们自己有人勇敢一点站出来承担责任，而不是找个给你白嫖的平台来背锅。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496208" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/f2f5d5fc465a5504753b2577ab8dc1fe" class="avatar" border="0" align="default" alt="gengchun"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">60</span></div>
+<div class="sep3"></div>
+ <strong><a href="https://www.v2ex.com/member/gengchun" class="dark">gengchun</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 14:13:28 +08:00">21 小时 5 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/HiCode">HiCode</a> 最好是直接腾讯云方面升级，客户这边不需要做配置之类的变更。要客户主动操作，哪怕就是点击一下，这个其实是锅在哪边的问题。感觉还是 OP 不想背这个锅。但如果是免费服务的话，让想大厂商背锅，这可能性太低。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496282" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/16572_normal.png" class="avatar" border="0" align="default" alt="cat9life"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">61</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/cat9life" class="dark">cat9life</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 14:26:54 +08:00">20 小时 52 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 9</span>
+<div class="sep5"></div>
+<div class="reply_content">看半天总算搞明白了，V2 鹅厂的员工很多...</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496291" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/95719_normal.png" class="avatar" border="0" align="default" alt="nellace"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">62</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/nellace" class="dark">nellace</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 14:29:03 +08:00">20 小时 49 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/xinghen57">xinghen57</a> 既然“发言前还是把前因后果梳理下，也是对自己的一种负责。”，还请具体解释一下什么叫“到这发帖，舆论引战？新手段？”。<br>既然“我发帖前会尽量认真看帖子前面的内容，就事论事。”，那你是怎么得出“另外，op 贴出的公告是完全兼容旧版 SDK ，没提旧版下线的事情。”。OP 帖子截图里面“旧版 CMQ 将按以下计划分批次进行下线，服务将关停”是截图太糊了吗</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496292" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/238889_normal.png" class="avatar" border="0" align="default" alt="rapperx2"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">63</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/rapperx2" class="dark">rapperx2</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 14:29:05 +08:00">20 小时 49 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">这算啥？ 你是没用过天翼云 有些东西更离谱</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496297" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/512578_normal.png" class="avatar" border="0" align="default" alt="captain2011"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">64</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/captain2011" class="dark">captain2011</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 14:30:16 +08:00">20 小时 48 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">去年就开始通知了，你没注意消息或者什么的？</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496424" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/399249_normal.png" class="avatar" border="0" align="default" alt="byasm32"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">65</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/byasm32" class="dark">byasm32</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 14:57:58 +08:00">20 小时 20 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">是想让腾讯云把迁移适配也给你做了吗[狗头]</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496460" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/486663_normal.png" class="avatar" border="0" align="default" alt="JensenQian"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">66</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/JensenQian" class="dark">JensenQian</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 15:07:02 +08:00">20 小时 11 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">确认了一下，腾讯云裁员是重灾区<br>aHR0cHM6Ly9ob3N0bG9jLmNvbS90aHJlYWQtOTg0NzgyLTEtMS5odG1s （ base64 ）<br>隔壁 mjj 说的，凉心云裁员</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496589" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/49898a022667beb29951a580b31eeb9c" class="avatar" border="0" align="default" alt="xinghen57"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">67</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/xinghen57" class="dark">xinghen57</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 15:37:27 +08:00">19 小时 41 分钟前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/nellace">nellace</a> 来<br><a target="_blank" href="https://baike.baidu.com/item/%E9%97%AE%E5%8F%B7" rel="nofollow noopener">https://baike.baidu.com/item/问号</a> /24766<br>百度百科-问号<br><br>另外，我就事论事，并且根据 v 友提供的信息进行了合理假设，并推导结论。op 当事人还没出来，你这跳出来唱的哪出？<br>上来就扣帽子，看帖只看 op 发的主题，对我的论据假设也没实质性的否定。<br>你到底算高级黑呢，还是脑残粉呢？</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496744" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/494999_normal.png" class="avatar" border="0" align="default" alt="cxxxxx"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">68</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/cxxxxx" class="dark">cxxxxx</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 16:03:22 +08:00">19 小时 15 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">境外势力警告</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496864" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/12717_normal.png" class="avatar" border="0" align="default" alt="laoyuan"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">69</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/laoyuan" class="dark">laoyuan</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 16:24:46 +08:00">18 小时 54 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">搅屎棍大家都看到了，理他他就赢了</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496928" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/464792_normal.png" class="avatar" border="0" align="default" alt="zhaol"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">70</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/zhaol" class="dark">zhaol</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 16:39:43 +08:00">18 小时 39 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">v2 已经不让吐槽了嘛？还得一个流程下来才允许在 v2 发帖？</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496959" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/95719_normal.png" class="avatar" border="0" align="default" alt="nellace"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">71</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/nellace" class="dark">nellace</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 16:46:37 +08:00">18 小时 32 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/xinghen57">xinghen57</a> <br>1 、我个人非常反感胡搅蛮缠，说句话就给人冠之“舆论引战”的人。你觉得党纪国法是帽子，我认为党纪国法作为一个人的底线，只要不违反党纪国法完全可以说可以提，我觉得问题是很难堵住的，堵不如疏。<br>2 、你既然是“就事论事”，那请就我上面提的两个问题解释一下，解释一下这个 OP 是怎么“到这发帖，舆论引战？新手段？”和你是怎么“我发帖前会尽量认真看帖子前面的内容，就事论事”的。<br>3 、“你这跳出来唱的哪出？”，因为我就想就事论事，把事情厘清，而不是顾左右而言他，这样最简单。<br>4 、“并且根据 v 友提供的信息进行了合理假设，并推导结论。”，根据事实依据去做假设推论能接近真相，脱离事实依据去臆想那只能推出你自己想要的答案。<br>5 、你觉得我是“高级黑”或者“脑残粉”都可以，无所谓，反正我也管不了你怎么想。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11496978" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/1aa18e98e20c083a45da377ff0831b3b" class="avatar" border="0" align="default" alt="thrallchen"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">72</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/thrallchen" class="dark">thrallchen</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 16:50:36 +08:00">18 小时 28 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 1</span>
+<div class="sep5"></div>
+<div class="reply_content">这么大一公司，真对不起用户对他的信任。<br>就算我个人搞个服务，要停起码也要提前几个月通知吧。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497026" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/15703_normal.png" class="avatar" border="0" align="default" alt="zyh94946"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">73</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/zyh94946" class="dark">zyh94946</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 17:01:03 +08:00">18 小时 17 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 3</span>
+<div class="sep5"></div>
+<div class="reply_content">看懵逼了，免费服务咋了，免费就能先下线再通知？你们意思是免费试吃，吃死了活该？？牛逼刷新认知，无力吐槽</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497027" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/395967_normal.png" class="avatar" border="0" align="default" alt="HiCode"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">74</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/HiCode" class="dark">HiCode</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 17:01:07 +08:00">18 小时 17 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/gengchun">gengchun</a> 腾讯云去年九月，说过是技术架构升级，相当于是出了一个新的服务。腾讯云是否有必要给旧服务的用户提供“适配层”，这个不好说，如果是收费服务，我相信可以要求腾讯云提供适配——可惜不是，腾讯云不做也不应该指责。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497039" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/442190_normal.png" class="avatar" border="0" align="default" alt="eason1874"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">75</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/eason1874" class="dark">eason1874</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 17:05:32 +08:00">18 小时 13 分钟前</span> &nbsp; <span class="small fade"><img src="./不敢用腾讯云了 - V2EX_files/heart_neue_red.png" width="14" align="absmiddle" alt="❤️"> 3</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/yuzo555">yuzo555</a> #32<br>@<a href="https://www.v2ex.com/member/yin1999">yin1999</a> #33 从 Github 提交记录来看，下线公告确实前几天（ 2022-03-18 ）发的，不过也可以看到迁移说明已经发半年了（ 2021-09-23 ）<br><br>2020-05-12 暂停内测，2021-09-23 发布新版和迁移说明，2022-03-18 通知旧版即将下线<br><br>22 日楼主收到通知时距离下线还剩 10 天。新版完全兼容旧版当前 SDK ，但楼主用的是旧版当前 SDK 兼容的 2017 更旧的 SDK ，跨两个版本，不兼容了。楼主措手不及<br><br>这事我感觉很难评价，五五开吧。腾讯云虽然早通知迁移，但没说旧版下线时间，不明确，临期才说，太赶。我要是在楼主公司，我会认为公司管理责任更大，供应商管理略等于无，用着停更四年的 SDK ，无视供应商产品动态，供应商说停供了才反应过来，这种管理要是做实业指定破产</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497044" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/b7b4b6a55fbea69dce7c489697293935" class="avatar" border="0" align="default" alt="Lemeng"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">76</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Lemeng" class="dark">Lemeng</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 17:06:50 +08:00">18 小时 12 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">这就有点过了。希望出个补充说明</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497304" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/f8c9d67d4c9c784b8ef637ec2d217f5c" class="avatar" border="0" align="default" alt="angryfish"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">77</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/angryfish" class="dark">angryfish</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 18:05:50 +08:00">17 小时 13 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">用第三方的服务，是有这种风险的。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497315" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/48786_normal.png" class="avatar" border="0" align="default" alt="kidlj"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">78</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/kidlj" class="dark">kidlj</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 18:11:14 +08:00">17 小时 7 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">&gt; 用外部服务，都最好写个适配器，方便切换为其他家的。<br><br>That's why we invented `interface`.</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497477" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/438004_normal.png" class="avatar" border="0" align="default" alt="docx"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">79</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/docx" class="dark">docx</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 19:10:21 +08:00">16 小时 8 分钟前 via Android</span>
+<div class="sep5"></div>
+<div class="reply_content">免费的不保证 SLA 我能理解，非要强行下线也不是不行，不过要知道这是以破坏用户信任为代价的。<br><br>免费的目的是推广，是让目标客户在商用后留存，结果推广期你就把人家坑了。笑死。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497510" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/203749_normal.png" class="avatar" border="0" align="default" alt="snxq1995"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">80</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/snxq1995" class="dark">snxq1995</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 19:24:05 +08:00">15 小时 54 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">我站 75 楼。<br><br>另外商业公司，这种事你们可以花点儿钱嘛！花点儿！花不了多少钱！白嫖上瘾总会出事的。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497529" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/412425_normal.png" class="avatar" border="0" align="default" alt="aliveyang"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">81</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/aliveyang" class="dark">aliveyang</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 19:32:03 +08:00">15 小时 46 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">忧患意识啊，就算别人守规矩，你自身也要报有最坏的打算撒！不能说有了法律，就没了安全意识</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497618" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/459675_normal.png" class="avatar" border="0" align="default" alt="q1angch0u"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">82</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/q1angch0u" class="dark">q1angch0u</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 20:05:15 +08:00">15 小时 13 分钟前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/zyh94946">zyh94946</a> 免费试吃在这件事儿上不是吃死了活该，而是第二天没有试吃了，亦或说是换了个口味，却有人在骂供应商，谢谢。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497665" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/48a97b9d6e677c7f1ed44fc9a2350833" class="avatar" border="0" align="default" alt="cn6781080"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">83</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/cn6781080" class="dark">cn6781080</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 20:24:38 +08:00">14 小时 54 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">V2 应该很多鹅厂。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497714" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/f339659dbe586c2dc2d7bd220b6524ce" class="avatar" border="0" align="default" alt="salmon5"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">84</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/salmon5" class="dark">salmon5</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 20:44:49 +08:00">14 小时 34 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">公有云厂商下线服务或者升级不兼容服务，至少留 3-12 个月的迁移升级时间吧<br>这个时间有点草率。<br>和免费或收费没关系，你也可以提前 3-6 个月通知商用收费</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497726" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/36ff911026712847e4d2f353bc64fb25.png" class="avatar" border="0" align="default" alt="palfortime"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">85</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/palfortime" class="dark">palfortime</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 20:49:49 +08:00">14 小时 29 分钟前 via Android</span>
+<div class="sep5"></div>
+<div class="reply_content">楼主公司不是有 VIP 专属客服吗？我上家公司去年 4 ，5 月份就收到通知让切消息服务。当时还是我沟通的。<br>也不知道上家公司打算怎么处理，我从 cmq 刚上线就开始对接，部门用的库也是我一直维护。有点怀念。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497731" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/cb993fec1e18b209763275aebc0db691" class="avatar" border="0" align="default" alt="Goooooos"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">86</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Goooooos" class="dark">Goooooos</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 20:51:59 +08:00">14 小时 26 分钟前 via Android</span>
+<div class="sep5"></div>
+<div class="reply_content">建议自建机房</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497749" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/402022_normal.png" class="avatar" border="0" align="default" alt="YaakovZiv"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">87</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/YaakovZiv" class="dark">YaakovZiv</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 20:56:19 +08:00">14 小时 22 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">公有云是不是亏损太多了，所以就不想继续投入了</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497770" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/34160_normal.png" class="avatar" border="0" align="default" alt="se77en"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">88</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/se77en" class="dark">se77en</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 21:06:17 +08:00">14 小时 12 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">国内只有阿里云比较靠谱</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497796" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/41753_normal.png" class="avatar" border="0" align="default" alt="Cu635"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">89</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/Cu635" class="dark">Cu635</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 21:15:23 +08:00">14 小时 3 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">@<a href="https://www.v2ex.com/member/ydpro">ydpro</a> <br>为啥送了两个月的时间之后，就会有些业务跑两遍？<br><br>@<a href="https://www.v2ex.com/member/icy37785">icy37785</a> <br>@<a href="https://www.v2ex.com/member/lscho">lscho</a> <br>@<a href="https://www.v2ex.com/member/eason1874">eason1874</a> <br>@<a href="https://www.v2ex.com/member/yin1999">yin1999</a> <br>@<a href="https://www.v2ex.com/member/yuzo555">yuzo555</a> <br>咱有人能找到海外腾讯云的关停公告么？排除一下“海外莫斯科、新加坡、法兰克福、美东（弗吉尼亚） 3 月 15 日关停该服务，但人家的公告也早就发出来了”这种情况。然后大陆地区的公告是 3 月 18 日发出来。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11497807" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+ <td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/70926ccd47759f819544a703562dd05a.jpeg" class="avatar" border="0" align="default" alt="xgdgsc"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">90</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/xgdgsc" class="dark">xgdgsc</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 21:22:29 +08:00">13 小时 56 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">感谢提供素材 <a target="_blank" href="https://github.com/zhangyisui/FuckTencent/pull/2" rel="nofollow noopener">https://github.com/zhangyisui/FuckTencent/pull/2</a></div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11498021" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/29514_normal.png" class="avatar" border="0" align="default" alt="involvements"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">91</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/involvements" class="dark">involvements</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-23 23:04:04 +08:00">12 小时 14 分钟前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">其实腾讯云早在两年前就提醒说 cmq 不维护要下线了，去年 11 月也在吃提醒要下线了，，这次的通知只是说正式下线时间而已。<br><br>当然，tdmq cmq 有个严重的问题是无法触发云函数，所以建议还是迁移到 tdmq 吧，，</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11498161" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/87080_normal.png" class="avatar" border="0" align="default" alt="ysicing"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">92</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/ysicing" class="dark">ysicing</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-24 00:33:52 +08:00">10 小时 45 分钟前</span>
+<div class="sep5"></div>
+<div class="reply_content">tke 集群托管版本不是高可用的。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11498184" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/104939_normal.png" class="avatar" border="0" align="default" alt="wonderfulcxm"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">93</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/wonderfulcxm" class="dark">wonderfulcxm</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-24 00:54:03 +08:00">10 小时 24 分钟前 via iPhone</span>
+<div class="sep5"></div>
+<div class="reply_content">只能再次认清到一个事实：免费的是最贵的。😅</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="r_11498356" class="cell">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td width="48" valign="top" align="center"><img src="./不敢用腾讯云了 - V2EX_files/beb9197e08fdf5cd44141c18c0c80e0c.png" class="avatar" border="0" align="default" alt="kice"></td>
+<td width="10" valign="top"></td>
+<td width="auto" valign="top" align="left"><div class="fr"> &nbsp; &nbsp; <span class="no">94</span></div>
+<div class="sep3"></div>
+<strong><a href="https://www.v2ex.com/member/kice" class="dark">kice</a></strong> &nbsp; <div class="badges"></div>&nbsp; &nbsp;<span class="ago" title="2022-03-24 08:23:09 +08:00">2 小时 55 分钟前 via Android</span>
+<div class="sep5"></div>
+<div class="reply_content">就算是抽象出接口也不能保证 100%无痛，用新接口的一万个功能才能模拟出旧接口的一个功能也不是不可能没有，甚至直接无了。<br><br>至于说之前推荐升级新版的通知，正常来说并不会去升级，因为升级了接口并不能产出，除非说以后会弃用。<br><br>目前来看的话，说不定腾讯云内部也是突然就收到通知就被砍了。如果不是，那么腾讯云确实是不对自己提供的服务负责任。<br><br>这就和前段时间开源项目 faker 作者一个性质。</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div style="border-bottom: 1px solid var(--box-border-color);">
+
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div class="sep20"></div>
+<div class="sep20"></div>
+<div style="box-sizing: border-box"><div class="wwads-cn wwads-horizontal" data-id="98" style="max-width: 100%; padding-top: 10px; margin-top: 0px; text-align: left; box-shadow: 0 2px 3px rgb(0 0 0 / 10%); border-bottom: 1px solid var(--box-border-color); background-color: var(--box-background-color); color: var(--box-foreground-color);" id="wwads-cn-98"></div></div>
+<style type="text/css">.wwads-cn { border-radius: 3px !important; } .wwads-text { color: var(--link-color) !important; }</style>
+</div>
+</div>
+<div class="c"></div>
+<div class="sep20"></div>
+</div>
+<div id="Bottom">
+<div class="content">
+<div class="inner">
+<div class="sep10"></div>
+<div class="fr">
+<a href="https://www.digitalocean.com/?refcode=1b51f1a7651d" target="_blank"><div id="DigitalOcean"></div></a>
+</div>
+<strong><a href="https://www.v2ex.com/about" class="dark" target="_self">关于</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="https://www.v2ex.com/help" class="dark" target="_self">帮助文档</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="https://www.v2ex.com/help/api" class="dark" target="_self">API</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="https://www.v2ex.com/faq" class="dark" target="_self">FAQ</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="https://www.v2ex.com/mission" class="dark" target="_self">我们的愿景</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="https://www.v2ex.com/advertise" class="dark" target="_self">广告投放</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="https://www.v2ex.com/advertise/2019.html" class="dark" target="_self">感谢</a> &nbsp; <span class="snow">·</span> &nbsp; <a href="https://www.v2ex.com/tools" class="dark" target="_self">实用小工具</a> &nbsp; <span class="snow">·</span> &nbsp; 4167 人在线</strong> &nbsp; <span class="fade">最高记录 5497</span> &nbsp; <span class="snow">·</span> &nbsp; <a href="https://www.v2ex.com/select/language" class="f11"><img src="./不敢用腾讯云了 - V2EX_files/language.png" width="16" align="absmiddle" id="ico-select-language"> &nbsp; Select Language</a>
+<div class="sep20"></div>
+创意工作者们的社区
+<div class="sep5"></div>
+World is powered by solitude
+<div class="sep20"></div>
+<span class="small fade">VERSION: 3.9.8.5 · 27ms · <a href="https://www.v2ex.com/worldclock#utc">UTC 03:18</a> · <a href="https://www.v2ex.com/worldclock#pvg">PVG 11:18</a> · <a href="https://www.v2ex.com/worldclock#lax">LAX 20:18</a> · <a href="https://www.v2ex.com/worldclock#jfk">JFK 23:18</a><br>Developed with <a href="https://cl.v2ex.pro/" target="_blank">CodeLauncher</a><br>♥ Do have faith in what you're doing.</span>
+<div class="sep10"></div>
+</div>
+</div>
+</div>
+<script src="./不敢用腾讯云了 - V2EX_files/acZzK5f4pcCo9gbBklBkM_dJtY26RDnCoYQ8dlj6S0ufV65p1toAMSGz-nUULdpSCEpVdKIkaKdz_X1ntINiwx_Y6l-dhBg1Z0fk63y6YG_6yPstXI1Lrbkr-P89gi2TY6vkQsHCrBsQWcSqcMzOPxe6ES4Ww55_VtTGCR7iunk="></script>
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-11940834-2', 'v2ex.com');
+      ga('send', 'pageview');
+      
+
+ga('send', 'event', 'Node', 'topic', 'cloud');
+
+
+
+    </script>
+
+<iframe src="./不敢用腾讯云了 - V2EX_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./不敢用腾讯云了 - V2EX_files/zrt_lookup.html" style="display: none;"></iframe></html>
