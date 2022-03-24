@@ -3,11 +3,12 @@ This repostory is about the crime of Tencent and we can scold Tencent here.
 ---
 Pr welcome
 
+## 社交媒体
 
-## Wechat
-* to be solved
+### Wechat
+* Problems
 
-   * Linux客户端
+    * Linux客户端
 
 * partially solved
 
@@ -15,8 +16,8 @@ Pr welcome
 
 * solved
 
-## 企业微信
-* to be solved
+### 企业微信
+* Problems
 
     * Linux客户端
  
@@ -27,25 +28,33 @@ Pr welcome
  
 * solved
 
-## QQ
-* to be solved
+### QQ
+* Problems
 
-     * Linux客户端
+    * Linux客户端
 
 * partially solved
 * solved
 
-## QQ音乐
-* to be solved
+## 影音娱乐
+
+### QQ音乐
+* Problems
 * partially solved
 * solved
 
+### 英雄联盟
+* Problems
 
-## 腾讯云
+    * [英雄联盟下载强制捆绑wegame](https://www.bilibili.com/read/cv13739000)
+    
+* partially solved
+* solved
 
-* to be solved
+### 腾讯云
+* Problems
 
-     * [不敢用腾讯云了 - V2EX](https://www.v2ex.com/t/842172)
+    * [不敢用腾讯云了 - V2EX](https://www.v2ex.com/t/842172)
 
 * partially solved
 * solved
